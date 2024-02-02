@@ -3,15 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Flexbox in CSS</title>
-        <style></style>
-    </head>
+        <title>Display None vs Visibility Hidden</title>
+        <style>
+            .display-none {
+                display: none;
+            }
 
+            .visibility-hidden {
+                visibility: hidden;
+            }
+        </style>
+    </head>
     <body>
-        <div class="container">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-        </div>
+        <button class="display-none">Test 1</button>
+        <button class="visibility-hidden">Test 2</button>
+        <button>Test 3</button>
     </body>
 </html>
