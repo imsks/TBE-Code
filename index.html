@@ -3,10 +3,29 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Day 1 - Intro to Tailwind</title>
+        <title>Day 3 - Add Your Config in Tailwind</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#ff5757",
+                            secondary: "yellow"
+                        }
+                    }
+                }
+            }
+        </script>
+        <style type="text/tailwindcss">
+            @layer utilities {
+                .btn {
+                    padding: 1rem 2rem;
+                }
+            }
+        </style>
     </head>
     <body>
-        <h1 class="text-3xl">This is Tailwind</h1>
+        <div class="w-full h-screen bg-primary md:bg-secondary">1</div>
     </body>
 </html>
