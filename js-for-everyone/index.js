@@ -1,13 +1,10 @@
-// Day 11 - Arrow vs Normal Functions
+// Day 15 - setTimeout vs setInterval
 // JS For Everyone
 
-function Person() {
-    console.log(this)
-}
+setTimeout(function () {
+    console.log("Called after 1 sec")
+}, 1000)
 
-const person = () => {
-    console.log(this)
-}
-
-Person()
-person()
+setInterval(function () {
+    console.log("Calling after every 1 sec")
+}, 1000)
