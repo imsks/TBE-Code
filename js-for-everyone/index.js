@@ -1,12 +1,13 @@
-// 8 - Object in JS
+// Day 11 - Arrow vs Normal Functions
 // JS For Everyone
 
-const obj = {
-    name: "a",
-    age: 20
+function Person() {
+    console.log(this)
 }
 
-const obj1 = new Object()
+const person = () => {
+    console.log(this)
+}
 
-console.log(typeof obj1)
-console.log(typeof [])
+Person()
+person()
